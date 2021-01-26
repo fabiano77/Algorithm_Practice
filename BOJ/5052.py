@@ -1,6 +1,4 @@
 import sys
-# import time
-# start_time = time.time()
 input = sys.stdin.readline
 t = int(input())
 
@@ -10,10 +8,7 @@ for _ in range(t):
     number_list = []
     for _ in range(n):
         number_list.append(input().rstrip())
-    # number_list.sort(key = len)
-    number_list.sort()
-    print(number_list, number_list[1:])    
-    print(list(zip(number_list, number_list[1:])))
+    number_list.sort(key = len)
 
     for i in range(len(number_list)):
         for j in range(i+1, len(number_list)):
