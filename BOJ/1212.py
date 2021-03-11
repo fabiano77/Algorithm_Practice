@@ -5,4 +5,4 @@ for ch in s:
         ans += ch.lower()
     else:
         ans += ch.upper()
-print(ans)
+print(ans) 
