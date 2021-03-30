@@ -1,10 +1,6 @@
 def reverse(string):
-    new = ''
-    for s in string[::-1]:
-        new += s
-    return new
+    return string[::-1]
 
 a, b = input().split()
-c = reverse(str(int(a)))+'+'+reverse(str(int(b)))
-
-print(reverse(str(eval(c))))
+c = str(int(reverse(a)))+'+'+str(int(reverse(b)))
+print(int(reverse(str(eval(c)))))
