@@ -1,6 +1,5 @@
-def reverse(string):
-    return string[::-1]
-
-a, b = input().split()
-c = str(int(reverse(a)))+'+'+str(int(reverse(b)))
-print(int(reverse(str(eval(c)))))
+a = input()
+if not '0' in a or sum(map(int, a)) % 3 != 0:
+    print(-1)
+else:
+    print(''.join(sorted(a, reverse=True)))
