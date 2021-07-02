@@ -6,7 +6,7 @@ for i in range(n-1):
         for x in range(i, n):
             for y in range(j, m):
                 val = my_map[i][j]
-                if my_map[i][y] == val and my_map[x][j] == val and my_map[x][y] == val:
+                if x-i == y-j and my_map[i][y] == val and my_map[x][j] == val and my_map[x][y] == val:
                     ans = max(ans, (x-i+1)*(y-j+1))
 print(ans)
     
